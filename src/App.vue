@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container p-2 mx-auto">
     <input-from class="mt-2" mode="group" title="新增分類" @post-group="postData"></input-from>
     <input-from
       class="mt-2"

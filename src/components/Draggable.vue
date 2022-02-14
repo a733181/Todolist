@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap mb-2 gap-7">
+  <div class="flex flex-col items-center mb-2 lg:flex-wrap lg:flex-row gap-7 lg:items-start">
     <div v-for="list in lists" :key="list.id">
       <div class="flex items-center justify-between h-[50px] mb-2">
         <p v-if="list.id !== cache.id">{{ list.name }}</p>

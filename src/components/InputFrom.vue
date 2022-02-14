@@ -1,10 +1,14 @@
 <template>
-  <form action="" class="flex items-center mb-3" @submit.prevent="submitFrom">
+  <form
+    action=""
+    class="flex flex-wrap items-center w-full mb-3 lg:w-3/4"
+    @submit.prevent="submitFrom"
+  >
     <label for="addClass" class="mr-2">{{ title }}</label>
     <input
       type="text"
       id="addClass"
-      class="p-1 mr-2 border border-gray-300 rounded-md"
+      class="flex-auto p-1 mr-2 border border-gray-300 rounded-md"
       :class="{ 'bg-gray-200': context.isValue }"
       v-model.trim="context.value"
       @blur="context.isValue = false"
@@ -12,7 +16,7 @@
     <select
       name=""
       id=""
-      class="p-1 mr-2 border rounded-lg"
+      class="w-full p-1 mt-2 mr-2 border rounded-lg lg:flex-1 lg:mt-0"
       v-model="context.group"
       v-if="mode === 'list'"
     >
@@ -25,7 +29,7 @@
         {{ group[1].value }}
       </option>
     </select>
-    <base-btn :mode="mode" submit>新增</base-btn>
+    <base-btn :mode="mode" submit class="w-full mt-2 lg:mt-0 lg:w-1/6">新增</base-btn>
   </form>
 </template>
 

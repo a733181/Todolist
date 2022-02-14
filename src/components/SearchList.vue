@@ -1,17 +1,17 @@
 <template>
-  <form action="" @submit.prevent="submitFrom">
+  <form action="" @submit.prevent="submitFrom" class="lg:w-3/4">
     <label for="search" class="mr-2">搜尋代辦</label>
     <input
       type="text"
-      class="p-1 mr-2 border border-gray-300 rounded-md"
+      class="w-full p-1 mr-2 border border-gray-300 rounded-md lg:w-3/5"
       id="search"
       v-model="searchKey.value"
       :class="{ 'bg-gray-200': searchKey.isValue }"
       @blur="searchKey.isValue = false"
     />
 
-    <base-btn submit mode="list" class="mr-2">搜尋</base-btn>
-    <base-btn mode="delete" @click="clearSearch">清除搜尋</base-btn>
+    <base-btn submit mode="list" class="w-full mr-2 mb-2 ;g:mb-0 lg:w-1/12">搜尋</base-btn>
+    <base-btn mode="delete" @click="clearSearch" class="w-full lg:w-2/12">清除搜尋</base-btn>
   </form>
 </template>
 
