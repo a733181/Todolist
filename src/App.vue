@@ -24,6 +24,8 @@
     </base-dialog>
     <base-loading :show="loading"></base-loading>
   </div>
+  <the-footer>
+  </the-footer>
 </template>
 
 <script>
@@ -32,6 +34,7 @@ import InputFrom from './components/InputFrom.vue';
 import SearchList from './components/SearchList.vue';
 import Draggable from './components/Draggable.vue';
 import BaseLoading from './components/BaseLoading.vue';
+import TheFooter from './components/TheFooter.vue';
 
 export default {
   components: {
@@ -39,6 +42,7 @@ export default {
     SearchList,
     Draggable,
     BaseLoading,
+    TheFooter,
   },
   data() {
     return {
