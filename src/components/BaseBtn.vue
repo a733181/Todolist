@@ -9,11 +9,11 @@ export default {
   props: {
     mode: {
       type: String,
-      redirect: false,
+      required: false,
     },
     submit: {
       type: Boolean,
-      redirect: false,
+      required: false,
     },
   },
   computed: {

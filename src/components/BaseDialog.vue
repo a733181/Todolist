@@ -29,11 +29,11 @@ export default {
   props: {
     show: {
       type: Boolean,
-      relative: true,
+      required: true,
     },
     title: {
       type: String,
-      relative: false,
+      required: false,
     },
   },
   emits: ['close'],

@@ -115,7 +115,6 @@ export default defineComponent({
     searchList(data) {
       return data.map((item) => {
         const newData = item.value.filter((list) => list.value.value.includes(this.searchKey));
-        console.log(newData.length);
         const group = {
           id: item.id,
           name: item.name,

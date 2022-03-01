@@ -36,7 +36,7 @@ export default {
   props: {
     show: {
       type: Boolean,
-      relative: true,
+      required: true,
     },
   },
 };
