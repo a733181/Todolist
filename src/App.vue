@@ -1,5 +1,5 @@
 <template>
-  <div class="container p-2 mx-auto">
+  <div class="container p-2 mx-auto min-h-[calc(100vh-40px)]">
     <input-from class="mt-2" mode="group" title="新增分類" @post-group="postData"></input-from>
     <input-from
       class="mt-2"
@@ -24,8 +24,7 @@
     </base-dialog>
     <base-loading :show="loading"></base-loading>
   </div>
-  <the-footer>
-  </the-footer>
+  <the-footer></the-footer>
 </template>
 
 <script>
